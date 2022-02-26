@@ -1,0 +1,178 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-animation: hsl(245, 83%, 60%);
+    --pale: hsla(0, 0%, 36%, 0.030);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+}
+
+h1,
+h2 {
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--desaturated-blue);
+}
+
+.padding {
+    padding: 1em;
+}
+
+.radius {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+main {
+    min-height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 310px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--very-pale-blue);
+    box-shadow: 5px 5px 5px var(--pale-blue);
+}
+
+.hero-img {
+    background-image: url('./images/illustration-hero.svg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    max-width: 310px;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-top: 0.5em;
+    margin-bottom: .5em;
+}
+
+.text p {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+    border-radius: 15px;
+    background-color: var(--pale);
+}
+
+.image {
+    background-image: url('./images/icon-music.svg');
+    width: 48px;
+    height: 48px;
+}
+
+.prices .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prices .desc h2 {
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.prices .desc p {
+    font-size: 1.5rem;
+}
+
+.prices a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+    transition: all .3s;
+}
+
+.prices a:hover {
+    text-decoration: none;
+    color: var(--bright-blue-animation);
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.btns .btn {
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns .btn:hover {
+    background-color: var(--bright-blue-animation);
+}
+
+.btns .cancel {
+    padding: 1em;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    transition: .3s;
+}
+
+.btns .cancel:hover {
+    color: var(--dark-blue);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
