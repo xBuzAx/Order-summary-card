@@ -56,7 +56,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 310px;
+    max-width: 370px;
     height: 100%;
     border-radius: 15px;
     background-color: var(--very-pale-blue);
@@ -69,7 +69,7 @@ main {
     background-size: cover;
     height: 200px;
     width: 100%;
-    max-width: 310px;
+    max-width: 370px;
 }
 
 .text {
